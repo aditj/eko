@@ -10,22 +10,17 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #f7f2d3;
-  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
-  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background-color: #f7f3de; }
+  background: #002b36;
+  background-color: #002b36;}
 
 .reveal {
   font-family: 'Amatic SC', cursive;
-  font-size: 40px;
+  font-size: 2em;
   font-weight: normal;
-  color: #333; }
+  color: #fff; }
 .theebo {
   font-family: 'Righteous', cursive !important;
+  font-size: 2.2em;
 }
 ::selection {
   color: #fff;
@@ -53,7 +48,7 @@ body {
 .reveal h6,
 .reveal p {
   margin: 0 0 20px 0;
-  color: #333;
+  color: #fff;
   font-family: 'Amatic SC', cursive;
   font-weight: normal;
   line-height: 1.2;
