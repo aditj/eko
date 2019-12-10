@@ -43,8 +43,9 @@
 
 
 				<!-- Slide2 -->
-				<section>
+				<section data-background-video="images/slide2.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.2"	>
 					
+<<<<<<< HEAD
 					
 						<video autoplay loop muted id="bg-video">	
 							<source data-src="images/slide2.mp4" type="video/mp4" />
@@ -53,6 +54,14 @@
 						<p style="color:#000000; font-family: Helvetica, sans-serif; font-size: 0.6em;" class="articlenews">‘Govt Panel Useless’: BJP Student Wing ABVP Opposes JNU Fee Hike</p>
 						<p class="quotenews" style="color:#750000; font-family: Helvetica, sans-serif; font-size: 0.6em;">- The Quint</p>
 					</div>
+=======
+					<div class="container">
+						<blockquote class="article" cite="The Quint">‘Govt Panel Useless’: BJP Student Wing ABVP Opposes JNU Fee Hike</blockquote>
+					</div>
+						<!-- <video autoplay loop muted id="bg-video">	
+							<source data-src="images/slide2.mp4" type="video/mp4" />
+						 </video> -->
+>>>>>>> a98a61ae1f2544232d8a7a5e06d795b49eec8f3e
 
 					<div class="tweetcontain">
 						<blockquote class="twitter-tweet" data-theme="light" data-link-color="#E81C4F">
@@ -103,6 +112,9 @@
 
 				
 			});
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+	alert(event.indexh);
+} );
 		</script>
 	</body>
 </html>
