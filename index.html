@@ -43,14 +43,14 @@
 
 
 				<!-- Slide2 -->
-				<section>
+				<section data-background-video="images/slide2.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.2"	>
 					
 					<div class="container">
 						<blockquote class="article" cite="The Quint">‘Govt Panel Useless’: BJP Student Wing ABVP Opposes JNU Fee Hike</blockquote>
 					</div>
-						<video autoplay loop muted id="bg-video">	
+						<!-- <video autoplay loop muted id="bg-video">	
 							<source data-src="images/slide2.mp4" type="video/mp4" />
-						 </video>
+						 </video> -->
 
 					<blockquote class="twitter-tweet" data-theme="light" data-link-color="#E81C4F">
 						<p lang="en" dir="ltr">Is JNU known in jehadi world as Jamia Nehru Ulema?</p>&mdash; Subramanian Swamy (@Swamy39) 
@@ -91,6 +91,9 @@
 
 				
 			});
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+	alert(event.indexh);
+} );
 		</script>
 	</body>
 </html>
