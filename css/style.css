@@ -11,75 +11,36 @@
     padding-top: 20px;
 }
 
-blockquote.twitter-tweet {
-    display: inline-block;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    border-color: #eee #ddd #bbb;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    margin: 10px 5px;
-    padding: 0 16px 16px 16px;
-    max-width: 468px;
-  }
-  
-  blockquote.twitter-tweet p {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 20px;
-  }
-  
-  blockquote.twitter-tweet a {
-    color: inherit;
-    font-weight: normal;
-    text-decoration: none;
-    outline: 0 none;
-  }
-  
-  blockquote.twitter-tweet a:hover,
-  blockquote.twitter-tweet a:focus {
-    text-decoration: underline;
-  }
-
-
-
-
-
-
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
-body {
-  background: #9b59b6;
-  font: normal 300 1em/1.5em 'Ubuntu', sans-serif;
+
+.tweetcontain{
+  padding-left: 60px;
 }
 
-.container {
+.newscontainer {
+  
   background: #fff;
-  width: 100%;
-  max-width: 480px;
-  min-width: 320px;
-  margin: 0em auto 0;
-  padding: 0em;
+  width: 40%;
+  border-radius: 10px;
+  margin: 0 auto 0;
+  margin-left: 50%;
+  padding: 0;
+  font-family: 'Arvo', serif; 
 }
 
-p { margin-bottom: 1.5em; }
-p:last-child { margin-bottom: 0; }
 
-blockquote.article {
+/* p { margin-bottom: 1.5em; }
+p:last-child { margin-bottom: 0; } */
+
+article {
   display: block;
-  border-width: 0px 0;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  padding: 0.5em 0 0.5em;
-  margin: 0.5em 0;
+  padding: 0 0 0;
+  margin: 0 0 0;
   position: relative;
   color: #000000;
-  font-family: 'Arvo', serif;
+  font-family: 'Arvo', serif; 
 }
 /* blockquote:before {
   content: '\201C';
@@ -94,7 +55,7 @@ blockquote.article {
   color: #666;
   text-align: center;
 } */
-blockquote:after {
+p.quote {
   content: "\2013 \2003" attr(cite);
   display: block;
   text-align: right;
