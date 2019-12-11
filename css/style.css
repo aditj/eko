@@ -62,9 +62,19 @@ p.quote {
   color: #e74c3c;
 }
 .blur{
-  filter: blur(2px);
-  -webkit-filter: blur(8px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 .invisible{
   display:none;
+}
+.footer{
+
+  top: 100%;
+  position: absolute;
+  left: 30%;
+  font-size: 1.2em;
+}
+.iteration-count{
+animation-iteration-count: 5;
 }
