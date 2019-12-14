@@ -66,3 +66,32 @@ p.quote {
 .iteration-count{
 animation-iteration-count: 5;
 }
+
+span {
+  display: inline;
+}
+span:after {
+  width: 0px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .2s linear;
+}
+span:nth-child(1):after {
+  content: 'awaharlal ';
+}
+span:nth-child(2):after {
+  content: 'ehru ';
+}
+span:nth-child(3):after {
+  content: 'niversity ';
+}
+div:hover span:nth-child(1):after {
+  width: 90px;
+}
+div:hover span:nth-child(2):after {
+  width: 45px;
+}
+div:hover span:nth-child(3):after {
+  width: 85px;
+}
