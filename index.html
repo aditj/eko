@@ -36,7 +36,7 @@
 
 
 				<!-- Slide2 -->
-				<section  id="slide2" data-background-video="images/slide2.mp4" data-background-video-loop data-background-video-muted data-background-opacity="1"	>
+				<section  id="slide2" data-background-video="images/slide2.mp4" data-background-video-loop data-background-video-muted >
 					
 					
 					<h1 id="overlayslide2" class="invisible">There has been a lot of noise, its time for some recap.</h1>
@@ -76,11 +76,11 @@
 					<h5 id="2_8" class="footer invisible">Its important to know what JNU is and why is it important.</h5>
 				</section>
 				<section id="slide3">
-						<div>
-  							<span>What is J</span>
-						    <span>N</span>
-						    <span>U</span>
-						    <span>?</span>
+						<div id="3_head">
+  							<span id='3_1' class="fullform">What is J</span>
+						    <span id='3_2' class="fullform">N</span>
+						    <span id='3_3' class="fullform">U</span>
+						    <span  id='3_4' class="fullform">?</span>
 						</div>
 				</section>
 			</div>
@@ -103,11 +103,13 @@
 				minScale: 1.2,
 				maxScale: 100,
 			});
+
 			// Event listener for slide transitions
 			//TODO Export this code outta here.
 			Reveal.addEventListener( 'slidechanged', function( event ) {
+				if  (event.indexh==1){
 				setTimeout(function (){
-					document.getElementsByClassName("slide-background-content")[1].style.opacity="0.2";
+					document.getElementsByClassName("slide-background-content")[1].classList.add("opaque");
 					document.getElementById("2_1").classList.remove("invisible");
 					document.getElementById("2_1").classList.add('animated','slideInRight');
 
@@ -154,6 +156,14 @@
 
 
 				}, 11500);
+				}
+				else if( event.indexh==2){
+					
+					setTimeout(function (){
+						document.getElementById("3_head").classList.add("expand");
+					
+				}, 1000);
+				}
 				
 				
 
